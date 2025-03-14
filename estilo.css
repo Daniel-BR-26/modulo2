@@ -6,69 +6,121 @@
 }
 
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 90px;
+    padding: 15px 120px;
+    padding-bottom: 20px;
+    background-color: #fefefeff;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.mynavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 #starbucksicon{
-    display: inline-block;
-    background-image: url("./ilustracion/logo.svg");
-    margin: 20px;
     width: 50px;
     height: 50px;
+    background-image: url("./ilustracion/logo.svg");
+    margin: 10px;
     background-size: cover;
 }
 
-
-nav{
-    margin: 0px 0px;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: #fefefeff;
-    height: 100%;
+.navbarbutton, .navbarbutton2{
+    font-weight: bold;
 }
 
-section image{
-    width:50%;
-}
-
-nav a{
-    color: black;
+.navbarbutton a, .navbarbutton2 a{
     text-decoration: none;
-}
-
-.navbarbutton, #starbucksicon{
-    vertical-align: middle;
-}
-
-.navbarbutton{
-    display: inline-block;
-    font-weight: bold;
-    margin: 0px 20px;
-}
-
-.navbarbutton a{
     color: #212121;
     padding-bottom: 25px;
 }
 
-nav a:hover{
-    border-bottom: 3px solid #00754a;
-    color: #00754a;
-    zoom: 115%;
+.navbarbutton a:hover, .navbarbutton2 a:hover{
+border-bottom: 3px solid #00754a;
+color: #00754a;
+zoom: 115%;
 }
 
-.navbarbutton2{
-    display: inline-block;
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+#firstbutton, #secondbutton{
+    padding: 8px 15px;
+    border: 2px solid black;
+    border-radius: 20px;
     font-weight: bold;
-    margin: 0px 20px;
-    margin-left: auto;
-    font-size: 14px;
-    padding-left: 50px;
 }
 
-.navbarbutton a{
+#firstbuttonr{
+    background-color: transparent;
     color: #212121;
-    padding-bottom: 25px;
 }
 
+#secondbutton{
+    background-color: black;
+    color: white;
+}
+
+#firstbutton:hover ,#secondbutton:hover{
+    zoom: 110%;
+}
+
+main{
+    padding-top: 2px;
+}
+
+.banner{
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section img{
+    width: 50%;
+}
+
+.banner h2{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.banner p{
+    font-size: 18.5px;
+    line-height: 35px;
+}
+
+.banner div{
+    align-content: center;
+    padding: 0px 80px;
+}
+
+#FRAPPUCCINO{
+    background-color: #bfdeda;
+    color: #1e3932;
+}
+
+#BERRY{
+    background-color: #bdceff;
+    color: #204285;
+}
